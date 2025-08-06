@@ -7,7 +7,7 @@ const FinalStep = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/form", formData);
+      const res = await axios.post("https://multi-step-form-frontend-backend.onrender.com/api/form", formData);
       toast.success("Form submitted successfully!");
       console.log(res);
       console.log(formData);
